@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msgSender || Best Chatting App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/73feb27ee3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="chattingContainer">
+        <div class="containerHeader">
+            <!-- For Logo Part -->
+            <div class="chatLogo">
+                <i class="fab fa-facebook-messenger"></i>
+                <h3>msgSender</h3>
+            </div>
+            <!-- For Total Number of Users -->
+            <div class="totalUsers">
+                <i class="fas fa-users"></i>
+                <p id="totalNumber"></p>
+            </div>
+            <!-- For User Name -->
+            <div class="userName">
+                <i class="fas fa-user"></i>
+                <p id="yourName"></p>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------- -->
+        <div class="containerBody">
+            <div class="mainWrapper">
+                <div class="chatContent">
+                    <div class="message">
+                        <div class="rowMessage incoming">
+                            <!-- <div class="msgTitle">
+                                🙂<span>Prateek</span>
+                            </div>
+                            <div class="msgText">
+                                <p>
+                                    I am Fine
+                                </p>
+                            </div>
+                            <div class="msgTime">
+                                <p>December 20</p>
+                            </div> -->
+                        </div>
+                        <div class="rowMessage outgoing">
+                            <!-- <div class="msgTitle">
+                                🙂<span>Keshav</span>
+                            </div>
+                            <div class="msgText">
+                                <p>
+                                    Hello how are you?
+                                </p>
+                            </div>
+                            <div class="msgTime">
+                                <p>December 20</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <form class="textedMessage">
+                    <input type="text" name="msg" id="enteredMessage" placeholder="Enter message here!!!"
+                        autocomplete="off">
+                    <button id="sendBtn" type="button">
+                        <i class="fas fa-paper-plane"> Send</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
